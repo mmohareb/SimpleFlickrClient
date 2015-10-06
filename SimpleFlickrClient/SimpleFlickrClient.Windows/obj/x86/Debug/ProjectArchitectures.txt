@@ -1,0 +1,1 @@
+C:\Users\mmohareb1\Documents\Visual Studio 2015\Projects\SimpleFlickrClient\SimpleFlickrClient\SimpleFlickrClient.Windows\SimpleFlickrClient.Windows.csproj;x86

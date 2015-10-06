@@ -1,0 +1,35 @@
+﻿<Page
+    x:Class="SimpleFlickrClient.ItemPage"
+    d:DataContext="{Binding Groups[0].Items[0], Source={d:DesignData Source=../SimpleFlickrClient.Shared/DataModel/SampleData.json, Type=data:SampleDataSource}}"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:SimpleFlickrClient"
+    xmlns:data="using:SimpleFlickrClient.Data"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
+    DataContext="{Binding Source={StaticResource Locator}, Path=Main}"
+    xmlns:maps="using:Windows.UI.Xaml.Controls.Maps">
+    <Page.Transitions>
+        <TransitionCollection>
+            <NavigationThemeTransition>
+                <NavigationThemeTransition.DefaultNavigationTransitionInfo>
+                    <ContinuumNavigationTransitionInfo></ContinuumNavigationTransitionInfo>
+                </NavigationThemeTransition.DefaultNavigationTransitionInfo>
+            </NavigationThemeTransition>
+        </TransitionCollection>
+    </Page.Transitions>
+
+    <Grid x:Name="LayoutRoot">
+        <Grid.ChildrenTransitions>
+            <TransitionCollection>
+                <EntranceThemeTransition/>
+            </TransitionCollection>
+        </Grid.ChildrenTransitions>
+
+        <maps:MapControl maps:MapControl.Location="{Binding Location}"/>
+
+
+    </Grid>
+</Page>

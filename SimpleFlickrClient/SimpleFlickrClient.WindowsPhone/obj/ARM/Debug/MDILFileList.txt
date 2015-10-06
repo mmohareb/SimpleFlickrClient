@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Files>
+  <file>\SimpleFlickrClient.WindowsPhone.exe</file>
+  <file>\FlickrNetPCL.dll</file>
+  <file>\Microsoft.Threading.Tasks.dll</file>
+  <file>\Microsoft.Threading.Tasks.Extensions.dll</file>
+  <file>\PCLCrypto.dll</file>
+  <file>\System.Net.Http.Extensions.dll</file>
+  <file>\System.Net.Http.Primitives.dll</file>
+  <file>\Validation.dll</file>
+  <file>\GalaSoft.MvvmLight.dll</file>
+  <file>\GalaSoft.MvvmLight.Extras.dll</file>
+  <file>\GalaSoft.MvvmLight.Platform.dll</file>
+  <file>\Microsoft.Practices.ServiceLocation.dll</file>
+</Files>

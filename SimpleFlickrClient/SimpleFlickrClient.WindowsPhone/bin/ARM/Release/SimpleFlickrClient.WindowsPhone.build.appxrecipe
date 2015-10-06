@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>MMOHAREB</Machine>
+    <WindowsUser>mmohareb1</WindowsUser>
+    <TargetPlatformIdentifier>WindowsPhoneApp</TargetPlatformIdentifier>
+    <TargetOsVersion>6.3</TargetOsVersion>
+    <TargetOsDescription>Windows Phone 8.1</TargetOsDescription>
+    <SolutionConfiguration>Release|ARM</SolutionConfiguration>
+    <PackageArchitecture>arm</PackageArchitecture>
+    <PackageIdentityName>9abc44d1-e174-4037-b005-fcc372d8f6ca</PackageIdentityName>
+    <IntermediateOutputPath>C:\Users\mmohareb1\Documents\Visual Studio 2015\Projects\SimpleFlickrClient\SimpleFlickrClient\SimpleFlickrClient.WindowsPhone\obj\ARM\Release\</IntermediateOutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="C:\Users\mmohareb1\Documents\Visual Studio 2015\Projects\SimpleFlickrClient\SimpleFlickrClient\SimpleFlickrClient.WindowsPhone\bin\ARM\Release\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="C:\Users\mmohareb1\Documents\Visual Studio 2015\Projects\SimpleFlickrClient\SimpleFlickrClient\SimpleFlickrClient.WindowsPhone\bin\ARM\Release\SimpleFlickrClient.WindowsPhone.exe">
+      <PackagePath>SimpleFlickrClient.WindowsPhone.exe</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mmohareb1\Documents\Visual Studio 2015\Projects\SimpleFlickrClient\packages\FlickrNet.3.17.0\lib\net20\FlickrNet.dll">
+      <PackagePath>FlickrNet.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mmohareb1\Documents\Visual Studio 2015\Projects\SimpleFlickrClient\SimpleFlickrClient\SimpleFlickrClient.WindowsPhone\Assets\Logo.scale-240.png">
+      <PackagePath>Assets\Logo.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mmohareb1\Documents\Visual Studio 2015\Projects\SimpleFlickrClient\SimpleFlickrClient\SimpleFlickrClient.WindowsPhone\Assets\SmallLogo.scale-240.png">
+      <PackagePath>Assets\SmallLogo.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mmohareb1\Documents\Visual Studio 2015\Projects\SimpleFlickrClient\SimpleFlickrClient\SimpleFlickrClient.WindowsPhone\Assets\SplashScreen.scale-240.png">
+      <PackagePath>Assets\SplashScreen.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mmohareb1\Documents\Visual Studio 2015\Projects\SimpleFlickrClient\SimpleFlickrClient\SimpleFlickrClient.WindowsPhone\Assets\Square71x71Logo.scale-240.png">
+      <PackagePath>Assets\Square71x71Logo.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mmohareb1\Documents\Visual Studio 2015\Projects\SimpleFlickrClient\SimpleFlickrClient\SimpleFlickrClient.WindowsPhone\Assets\StoreLogo.scale-240.png">
+      <PackagePath>Assets\StoreLogo.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mmohareb1\Documents\Visual Studio 2015\Projects\SimpleFlickrClient\SimpleFlickrClient\SimpleFlickrClient.WindowsPhone\Assets\WideLogo.scale-240.png">
+      <PackagePath>Assets\WideLogo.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mmohareb1\Documents\Visual Studio 2015\Projects\SimpleFlickrClient\SimpleFlickrClient\SimpleFlickrClient.WindowsPhone\Assets\HubBackground.theme-dark.png">
+      <PackagePath>Assets\HubBackground.theme-dark.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mmohareb1\Documents\Visual Studio 2015\Projects\SimpleFlickrClient\SimpleFlickrClient\SimpleFlickrClient.WindowsPhone\Assets\HubBackground.theme-light.png">
+      <PackagePath>Assets\HubBackground.theme-light.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mmohareb1\Documents\Visual Studio 2015\Projects\SimpleFlickrClient\SimpleFlickrClient\SimpleFlickrClient.Shared\Assets\LightGray.png">
+      <PackagePath>Assets\LightGray.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mmohareb1\Documents\Visual Studio 2015\Projects\SimpleFlickrClient\SimpleFlickrClient\SimpleFlickrClient.Shared\Assets\MediumGray.png">
+      <PackagePath>Assets\MediumGray.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mmohareb1\Documents\Visual Studio 2015\Projects\SimpleFlickrClient\SimpleFlickrClient\SimpleFlickrClient.Shared\Assets\DarkGray.png">
+      <PackagePath>Assets\DarkGray.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mmohareb1\Documents\Visual Studio 2015\Projects\SimpleFlickrClient\SimpleFlickrClient\SimpleFlickrClient.Shared\DataModel\SampleData.json">
+      <PackagePath>DataModel\SampleData.json</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mmohareb1\Documents\Visual Studio 2015\Projects\SimpleFlickrClient\SimpleFlickrClient\SimpleFlickrClient.WindowsPhone\bin\ARM\Release\SimpleFlickrClient.WindowsPhone.xr.xml">
+      <PackagePath>SimpleFlickrClient.WindowsPhone.xr.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mmohareb1\Documents\Visual Studio 2015\Projects\SimpleFlickrClient\SimpleFlickrClient\SimpleFlickrClient.WindowsPhone\bin\ARM\Release\App.xbf">
+      <PackagePath>App.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mmohareb1\Documents\Visual Studio 2015\Projects\SimpleFlickrClient\SimpleFlickrClient\SimpleFlickrClient.WindowsPhone\bin\ARM\Release\HubPage.xbf">
+      <PackagePath>HubPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mmohareb1\Documents\Visual Studio 2015\Projects\SimpleFlickrClient\SimpleFlickrClient\SimpleFlickrClient.WindowsPhone\bin\ARM\Release\SectionPage.xbf">
+      <PackagePath>SectionPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mmohareb1\Documents\Visual Studio 2015\Projects\SimpleFlickrClient\SimpleFlickrClient\SimpleFlickrClient.WindowsPhone\bin\ARM\Release\ItemPage.xbf">
+      <PackagePath>ItemPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mmohareb1\Documents\Visual Studio 2015\Projects\SimpleFlickrClient\SimpleFlickrClient\SimpleFlickrClient.WindowsPhone\bin\ARM\Release\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>

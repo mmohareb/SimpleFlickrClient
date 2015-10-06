@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>MMOHAREB</Machine>
+    <WindowsUser>mmohareb1</WindowsUser>
+    <TargetPlatformIdentifier>Windows</TargetPlatformIdentifier>
+    <TargetOsVersion>6.3</TargetOsVersion>
+    <TargetOsDescription>Windows 8.1</TargetOsDescription>
+    <SolutionConfiguration>Release|x86</SolutionConfiguration>
+    <PackageArchitecture>x86</PackageArchitecture>
+    <PackageIdentityName>322ec834-42d4-423c-83c2-4cd242be1341</PackageIdentityName>
+    <IntermediateOutputPath>C:\Users\mmohareb1\Documents\Visual Studio 2015\Projects\SimpleFlickrClient\SimpleFlickrClient\SimpleFlickrClient.Windows\obj\x86\Release\</IntermediateOutputPath>
+    <RegisteredManifestChecksum>D55B6A915F08D4D2B21F9F5E3678984774196F2E29AA0B778ED32F6CFEF564C6</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>322ec834-42d4-423c-83c2-4cd242be1341_1.0.0.0_x86__0jt5gkxm15fqa</RegisteredPackageMoniker>
+    <RegisteredUserModeAppID>322ec834-42d4-423c-83c2-4cd242be1341_0jt5gkxm15fqa!App</RegisteredUserModeAppID>
+    <RegisteredPackageID>322ec834-42d4-423c-83c2-4cd242be1341</RegisteredPackageID>
+    <RegisteredPackagePublisher>CN=mmohareb1</RegisteredPackagePublisher>
+    <RegisteredVersion>1.0.0.0</RegisteredVersion>
+    <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="C:\Users\mmohareb1\Documents\Visual Studio 2015\Projects\SimpleFlickrClient\SimpleFlickrClient\SimpleFlickrClient.Windows\bin\x86\Release\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-10-06T06:59:49.151</Modified>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="C:\Users\mmohareb1\Documents\Visual Studio 2015\Projects\SimpleFlickrClient\SimpleFlickrClient\SimpleFlickrClient.Windows\bin\x86\Release\SimpleFlickrClient.Windows.exe">
+      <PackagePath>SimpleFlickrClient.Windows.exe</PackagePath>
+      <Modified>2015-10-06T06:59:48.845</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mmohareb1\Documents\Visual Studio 2015\Projects\SimpleFlickrClient\packages\FlickrNet.3.17.0\lib\net20\FlickrNet.dll">
+      <PackagePath>FlickrNet.dll</PackagePath>
+      <Modified>2015-10-05T16:16:45.508</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mmohareb1\Documents\Visual Studio 2015\Projects\SimpleFlickrClient\SimpleFlickrClient\SimpleFlickrClient.Windows\Assets\Logo.scale-100.png">
+      <PackagePath>Assets\Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-07-06T20:01:10.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mmohareb1\Documents\Visual Studio 2015\Projects\SimpleFlickrClient\SimpleFlickrClient\SimpleFlickrClient.Windows\Assets\SmallLogo.scale-100.png">
+      <PackagePath>Assets\SmallLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-07-06T20:01:10.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mmohareb1\Documents\Visual Studio 2015\Projects\SimpleFlickrClient\SimpleFlickrClient\SimpleFlickrClient.Windows\Assets\SplashScreen.scale-100.png">
+      <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-07-06T20:01:10.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mmohareb1\Documents\Visual Studio 2015\Projects\SimpleFlickrClient\SimpleFlickrClient\SimpleFlickrClient.Windows\Assets\StoreLogo.scale-100.png">
+      <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-07-06T20:01:10.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mmohareb1\Documents\Visual Studio 2015\Projects\SimpleFlickrClient\SimpleFlickrClient\SimpleFlickrClient.Windows\Assets\WideLogo.scale-100.png">
+      <PackagePath>Assets\WideLogo.scale-100.png</PackagePath>
+      <Modified>2015-07-06T20:01:10.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mmohareb1\Documents\Visual Studio 2015\Projects\SimpleFlickrClient\SimpleFlickrClient\SimpleFlickrClient.Shared\Assets\LightGray.png">
+      <PackagePath>Assets\LightGray.png</PackagePath>
+      <Modified>2015-07-06T20:01:10.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mmohareb1\Documents\Visual Studio 2015\Projects\SimpleFlickrClient\SimpleFlickrClient\SimpleFlickrClient.Shared\Assets\MediumGray.png">
+      <PackagePath>Assets\MediumGray.png</PackagePath>
+      <Modified>2015-07-06T20:01:10.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mmohareb1\Documents\Visual Studio 2015\Projects\SimpleFlickrClient\SimpleFlickrClient\SimpleFlickrClient.Shared\Assets\DarkGray.png">
+      <PackagePath>Assets\DarkGray.png</PackagePath>
+      <Modified>2015-07-06T20:01:10.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mmohareb1\Documents\Visual Studio 2015\Projects\SimpleFlickrClient\SimpleFlickrClient\SimpleFlickrClient.Shared\DataModel\SampleData.json">
+      <PackagePath>DataModel\SampleData.json</PackagePath>
+      <Modified>2015-10-05T16:03:09.827</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mmohareb1\Documents\Visual Studio 2015\Projects\SimpleFlickrClient\SimpleFlickrClient\SimpleFlickrClient.Windows\bin\x86\Release\SimpleFlickrClient.Windows.xr.xml">
+      <PackagePath>SimpleFlickrClient.Windows.xr.xml</PackagePath>
+      <Modified>2015-10-06T06:59:48.681</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mmohareb1\Documents\Visual Studio 2015\Projects\SimpleFlickrClient\SimpleFlickrClient\SimpleFlickrClient.Windows\bin\x86\Release\App.xbf">
+      <PackagePath>App.xbf</PackagePath>
+      <Modified>2015-10-06T06:59:48.713</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mmohareb1\Documents\Visual Studio 2015\Projects\SimpleFlickrClient\SimpleFlickrClient\SimpleFlickrClient.Windows\bin\x86\Release\HubPage.xbf">
+      <PackagePath>HubPage.xbf</PackagePath>
+      <Modified>2015-10-06T06:59:48.713</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mmohareb1\Documents\Visual Studio 2015\Projects\SimpleFlickrClient\SimpleFlickrClient\SimpleFlickrClient.Windows\bin\x86\Release\SectionPage.xbf">
+      <PackagePath>SectionPage.xbf</PackagePath>
+      <Modified>2015-10-06T06:59:48.713</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mmohareb1\Documents\Visual Studio 2015\Projects\SimpleFlickrClient\SimpleFlickrClient\SimpleFlickrClient.Windows\bin\x86\Release\ItemPage.xbf">
+      <PackagePath>ItemPage.xbf</PackagePath>
+      <Modified>2015-10-06T06:59:48.713</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mmohareb1\Documents\Visual Studio 2015\Projects\SimpleFlickrClient\SimpleFlickrClient\SimpleFlickrClient.Windows\bin\x86\Release\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+      <Modified>2015-10-06T06:59:49.004</Modified>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>
