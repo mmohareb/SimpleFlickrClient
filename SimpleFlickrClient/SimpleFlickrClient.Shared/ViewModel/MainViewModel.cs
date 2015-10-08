@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using Windows.UI.Xaml;
 using Windows.Devices.Geolocation;
+using Bing.Maps;
 
 namespace SimpleFlickrClient.ViewModel
 {
@@ -170,6 +171,19 @@ namespace SimpleFlickrClient.ViewModel
                 RaisePropertyChanged(() => Location);
             }
         }
+
+        private Location bingMapsLocation;
+
+        public Location BingMapsLocation
+        {
+            get { return bingMapsLocation; }
+            set
+            {
+                bingMapsLocation = value;
+                RaisePropertyChanged(() => BingMapsLocation);
+            }
+        }
+
 
         private string locationTitle;
 

@@ -14,6 +14,7 @@ using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 using SimpleFlickrClient.Data;
 using SimpleFlickrClient.Common;
+using Windows.System;
 
 // The Universal Hub Application project template is documented at http://go.microsoft.com/fwlink/?LinkID=391955
 
@@ -26,6 +27,7 @@ namespace SimpleFlickrClient
     {
         private NavigationHelper navigationHelper;
         private ObservableDictionary defaultViewModel = new ObservableDictionary();
+        private int pagesCounter = 0;
 
         /// <summary>
         /// Gets the NavigationHelper used to aid in navigation and process lifetime management.
@@ -88,10 +90,7 @@ namespace SimpleFlickrClient
         /// <param name="e">Event data that describes the item clicked.</param>
         void ItemView_ItemClick(object sender, ItemClickEventArgs e)
         {
-            // Navigate to the appropriate destination page, configuring the new page
-            // by passing required information as a navigation parameter
-            var itemId = ((SampleDataItem)e.ClickedItem).UniqueId;
-            this.Frame.Navigate(typeof(ItemPage), itemId);
+            Frame.Navigate(typeof(SectionPage));
         }
         #region NavigationHelper registration
 
@@ -116,5 +115,25 @@ namespace SimpleFlickrClient
         }
 
         #endregion
+
+        private void MyscrollbarScrollViewer_ViewChanged(object sender, ScrollViewerViewChangedEventArgs e)
+        {
+            var verticalOffsetValue = MyscrollbarScrollViewer.VerticalOffset;
+            var maxVerticalOffsetValue = MyscrollbarScrollViewer.ExtentHeight - MyscrollbarScrollViewer.ViewportHeight;
+            if (maxVerticalOffsetValue < 0 || verticalOffsetValue == maxVerticalOffsetValue)
+            {
+                // Scrolled to bottom
+                pagesCounter++;
+                (App.Current.Resources["Locator"] as ViewModel.ViewModelLocator).Main.GetDataFromFlickr(pagesCounter);
+            }
+        }
+
+        private void SearchTextBox_KeyDown(object sender, KeyRoutedEventArgs e)
+        {
+            if (e.Key == VirtualKey.Enter)
+            {
+                (App.Current.Resources["Locator"] as ViewModel.ViewModelLocator).Main.SearchDataFromFlickr((e.OriginalSource as TextBox).Text);
+            }
+        }
     }
 }

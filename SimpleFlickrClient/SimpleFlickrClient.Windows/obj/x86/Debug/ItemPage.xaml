@@ -1,13 +1,14 @@
 ﻿<Page
     x:Name="pageRoot"
     x:Class="SimpleFlickrClient.ItemPage"
-    DataContext="{Binding DefaultViewModel, RelativeSource={RelativeSource Self}}"
+    DataContext="{Binding Source={StaticResource Locator}, Path=Main}"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:SimpleFlickrClient"
     xmlns:data="using:SimpleFlickrClient.Data"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:maps="using:Bing.Maps"
     mc:Ignorable="d">
 
     <!--
@@ -32,8 +33,23 @@
             TODO: Content should be placed within the following grid 
                   to show details for the current item
         -->
-        <Grid Grid.Row="1" x:Name="contentRegion"/>
-
+        <maps:Map Grid.Row="1" Name="mapControl" Credentials="AsaG8IDqQ2MnOub27v1gNDnGKHWIodTR8tnGPD8OkK1_PUHcKbZuNWUP0sx5n9Hr" ZoomLevel="14">
+            <maps:Map.Center>
+                <maps:Location Latitude="{Binding BingMapsLocation.Latitude}" Longitude="{Binding BingMapsLocation.Longitude}"/>
+            </maps:Map.Center>
+                <maps:Map.Children>
+                <maps:Pushpin>
+                    <maps:MapLayer.Position>
+                        <maps:Location Latitude="{Binding BingMapsLocation.Latitude}" Longitude="{Binding BingMapsLocation.Longitude}"/>
+                    </maps:MapLayer.Position>
+                </maps:Pushpin>
+            </maps:Map.Children>
+            <!--<StackPanel Orientation="Horizontal" maps:MapControl.Location="{Binding Location}">
+                <Ellipse Width="15" Fill="Black" Height="15" Margin="6,0"/>
+                <TextBlock Text="{Binding LocationTitle}" Foreground="Black"/>
+            </StackPanel>-->
+        </maps:Map>
+        
         <!-- Back button and page title -->
         <Grid>
             <Grid.ColumnDefinitions>

@@ -16,6 +16,7 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using Bing.Maps;
 
 // The Universal Hub Application project template is documented at http://go.microsoft.com/fwlink/?LinkID=391955
 
@@ -83,6 +84,12 @@ namespace SimpleFlickrClient
         /// </summary>
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
+            var vm = (App.Current.Resources["Locator"] as ViewModel.ViewModelLocator).Main;
+            Pushpin pushpin = new Pushpin();
+            MapLayer.SetPosition(pushpin, vm.BingMapsLocation);
+            mapControl.Center = vm.BingMapsLocation;
+            mapControl.Children.Add(pushpin);
+            pageTitle.Text = vm.LocationTitle;
             this.navigationHelper.OnNavigatedTo(e);
         }
 

@@ -1,6 +1,8 @@
 <XamlCompilerSaveState>
   <ReferenceAssemblyList>
     <LocalAssembly PathName="c:\users\mmohareb1\documents\visual studio 2015\projects\simpleflickrclient\simpleflickrclient\simpleflickrclient.windows\obj\x86\debug\intermediatexaml\simpleflickrclient.windows.exe" HashGuid="6465154e-202a-50e8-3ee8-e4c0c51315b0" />
+    <ReferenceAssembly PathName="c:\users\mmohareb1\appdata\local\microsoft sdks\windows\v8.1\extensionsdks\bing.maps.xaml\1.313.0825.0\references\commonconfiguration\neutral\bing.maps.winmd" HashGuid="dcdce9e5-521a-6d20-3956-9df814dff813" />
+    <ReferenceAssembly PathName="c:\program files (x86)\microsoft sdks\windows\v8.1\extensionsdks\microsoft.vclibs\12.0\references\commonconfiguration\neutral\platform.winmd" HashGuid="58b6b6d1-928e-9908-9804-eb460e5e101b" />
     <ReferenceAssembly PathName="c:\users\mmohareb1\source\repos\simpleflickrclient\simpleflickrclient\packages\flickrnet.4.0.4-alpha\lib\portable-net45+sl5+wp8+win8+wpa81\flickrnetpcl.dll" HashGuid="9f91d35e-efb0-1dde-4ec1-e61fae8c7f8b" />
     <ReferenceAssembly PathName="c:\users\mmohareb1\source\repos\simpleflickrclient\simpleflickrclient\packages\mvvmlightlibs.5.2.0.0\lib\windows81\galasoft.mvvmlight.dll" HashGuid="d702f8e6-9904-1220-8de7-be8614bf93e8" />
     <ReferenceAssembly PathName="c:\users\mmohareb1\source\repos\simpleflickrclient\simpleflickrclient\packages\mvvmlightlibs.5.2.0.0\lib\windows81\galasoft.mvvmlight.extras.dll" HashGuid="f59e2cac-89a1-06f4-bbe7-18857251ef78" />

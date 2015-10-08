@@ -16,6 +16,7 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using SimpleFlickrClient.ViewModel;
 
 namespace SimpleFlickrClient
 {
@@ -65,9 +66,6 @@ namespace SimpleFlickrClient
         private async void NavigationHelper_LoadState(object sender, LoadStateEventArgs e)
         {
             // TODO: Create an appropriate data model for your problem domain to replace the sample data
-            var group = await SampleDataSource.GetGroupAsync((string)e.NavigationParameter);
-            this.DefaultViewModel["Group"] = group;
-            this.DefaultViewModel["Items"] = group.Items;
         }
 
         /// <summary>
@@ -105,5 +103,35 @@ namespace SimpleFlickrClient
         }
 
         #endregion
+
+        private void pivotmainview_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            var Item = ((sender as FlipView).SelectedItem as ThumbnailImage);
+            if (Item != null)
+            {
+                pageTitle.Text = Item.ImageTitle;
+                if(Item.GeoLocation!=null)
+                {
+                    (App.Current.Resources["Locator"] as ViewModel.ViewModelLocator).Main.LocationAppBarVisibility = Visibility.Visible;
+                }
+                else
+                {
+                    (App.Current.Resources["Locator"] as ViewModel.ViewModelLocator).Main.LocationAppBarVisibility = Visibility.Collapsed;
+                }
+            }
+        }
+
+        private void AppBarButton_Click(object sender, RoutedEventArgs e)
+        {
+            var selecteditem = (pivotmainview.SelectedItem as ThumbnailImage);
+            if (selecteditem != null)
+            {
+                var vm = (App.Current.Resources["Locator"] as ViewModelLocator).Main;
+                vm.BingMapsLocation = new Bing.Maps.Location(selecteditem.GeoLocation.Position.Latitude, selecteditem.GeoLocation.Position.Longitude);
+                vm.LocationTitle = selecteditem.ImageTitle;
+
+                Frame.Navigate(typeof(ItemPage));
+            }
+        }
     }
 }
