@@ -1,1 +1,1 @@
-C:\Users\mmohareb1\Documents\Visual Studio 2015\Projects\SimpleFlickrClient\SimpleFlickrClient\SimpleFlickrClient.WindowsPhone\SimpleFlickrClient.WindowsPhone.csproj;x86
+C:\Users\mmohareb1\Source\Repos\SimpleFlickrClient\SimpleFlickrClient\SimpleFlickrClient\SimpleFlickrClient.WindowsPhone\SimpleFlickrClient.WindowsPhone.csproj;x86

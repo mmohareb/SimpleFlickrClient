@@ -14,6 +14,7 @@
     <RootPropertyPathName Name="BigImage" />
     <RootPropertyPathName Name="LocationAppBarVisibility" />
     <RootPropertyPathName Name="Location" />
+    <RootPropertyPathName Name="LocationTitle" />
   </Roots.PropertyPathNames>
   <Roots.RootTypes>
     <RootType FullName="Windows.UI.Xaml.Application">
@@ -68,6 +69,7 @@
     <RootType FullName="Windows.UI.Xaml.Controls.StackPanel">
       <RootProperty Name="Margin" />
       <RootProperty Name="Children" />
+      <RootProperty Name="Orientation" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.TextBlock">
       <RootProperty Name="Text" />
@@ -157,8 +159,19 @@
     </RootType>
     <RootType FullName="SimpleFlickrClient.SectionPage" />
     <RootType FullName="Windows.UI.Xaml.Controls.Maps.MapControl">
+      <RootProperty Name="Name" />
+      <RootProperty Name="MapServiceToken" />
+      <RootProperty Name="ZoomLevel" />
+      <RootProperty Name="Center" />
+      <RootProperty Name="Children" />
       <RootMethod Name="GetLocation" />
       <RootMethod Name="SetLocation" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Shapes.Ellipse">
+      <RootProperty Name="Width" />
+      <RootProperty Name="Fill" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="Margin" />
     </RootType>
     <RootType FullName="SimpleFlickrClient.ItemPage" />
   </Roots.RootTypes>

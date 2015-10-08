@@ -28,7 +28,12 @@
             </TransitionCollection>
         </Grid.ChildrenTransitions>
 
-        <maps:MapControl maps:MapControl.Location="{Binding Location}"/>
+        <maps:MapControl Name="mapControl" MapServiceToken="AsaG8IDqQ2MnOub27v1gNDnGKHWIodTR8tnGPD8OkK1_PUHcKbZuNWUP0sx5n9Hr" ZoomLevel="14" Center="{Binding Location}">
+            <StackPanel Orientation="Horizontal" maps:MapControl.Location="{Binding Location}">
+                <Ellipse Width="15" Fill="Black" Height="15" Margin="6,0"/>
+                <TextBlock Text="{Binding LocationTitle}" Foreground="Black"/>
+            </StackPanel>
+        </maps:MapControl>
 
 
     </Grid>

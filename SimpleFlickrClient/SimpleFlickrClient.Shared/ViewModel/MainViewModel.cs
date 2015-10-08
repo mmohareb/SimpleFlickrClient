@@ -56,18 +56,26 @@ namespace SimpleFlickrClient.ViewModel
             handleResults(results, ImagesUrls);
         }
 
-        private void handleResults(PhotoCollection results, ObservableCollection<ThumbnailImage> List)
+        private async void handleResults(PhotoCollection results, ObservableCollection<ThumbnailImage> List)
         {
             foreach (var res in results)
             {
                 Geopoint point = null;
-                if (res.GeoContext.HasValue)
+                if (res.Longitude != 0 && res.Latitude != 0)
                 {
-                    //var location = await FlickrBase.Instance.PhotosGeoGetLocationAsync(res.PhotoId);
                     var position = new BasicGeoposition()
                     {
-                        Latitude = 47.620,
-                        Longitude = -122.349
+                        Latitude = res.Latitude,
+                        Longitude = res.Longitude
+                    };
+                    point = new Geopoint(position);
+                }
+                else if (res.Tags.Contains("cars"))
+                {
+                    var position = new BasicGeoposition()
+                    {
+                        Longitude = 13.416350,
+                        Latitude = 52.526105
                     };
                     point = new Geopoint(position);
                 }
@@ -159,10 +167,24 @@ namespace SimpleFlickrClient.ViewModel
             set
             {
                 location = value;
-                RaisePropertyChanged();
+                RaisePropertyChanged(() => Location);
+            }
+        }
+
+        private string locationTitle;
+
+        public string LocationTitle
+        {
+            get { return locationTitle; }
+            set
+            {
+                locationTitle = value;
+                RaisePropertyChanged(() => LocationTitle);
             }
         }
     }
+
+
     public class ThumbnailImage
     {
         private Uri imagePath;

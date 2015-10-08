@@ -124,7 +124,7 @@ namespace SimpleFlickrClient.SimpleFlickrClient_WindowsPhone_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[14];
+            _typeNameTable = new string[15];
             _typeNameTable[0] = "SimpleFlickrClient.ViewModel.ViewModelLocator";
             _typeNameTable[1] = "Object";
             _typeNameTable[2] = "SimpleFlickrClient.ViewModel.MainViewModel";
@@ -138,9 +138,10 @@ namespace SimpleFlickrClient.SimpleFlickrClient_WindowsPhone_XamlTypeInfo
             _typeNameTable[10] = "SimpleFlickrClient.Common.ObservableDictionary";
             _typeNameTable[11] = "String";
             _typeNameTable[12] = "SimpleFlickrClient.SectionPage";
-            _typeNameTable[13] = "SimpleFlickrClient.ItemPage";
+            _typeNameTable[13] = "System.Collections.Generic.IList`1<Windows.UI.Xaml.DependencyObject>";
+            _typeNameTable[14] = "SimpleFlickrClient.ItemPage";
 
-            _typeTable = new global::System.Type[14];
+            _typeTable = new global::System.Type[15];
             _typeTable[0] = typeof(global::SimpleFlickrClient.ViewModel.ViewModelLocator);
             _typeTable[1] = typeof(global::System.Object);
             _typeTable[2] = typeof(global::SimpleFlickrClient.ViewModel.MainViewModel);
@@ -154,7 +155,8 @@ namespace SimpleFlickrClient.SimpleFlickrClient_WindowsPhone_XamlTypeInfo
             _typeTable[10] = typeof(global::SimpleFlickrClient.Common.ObservableDictionary);
             _typeTable[11] = typeof(global::System.String);
             _typeTable[12] = typeof(global::SimpleFlickrClient.SectionPage);
-            _typeTable[13] = typeof(global::SimpleFlickrClient.ItemPage);
+            _typeTable[13] = typeof(global::System.Collections.Generic.IList<global::Windows.UI.Xaml.DependencyObject>);
+            _typeTable[14] = typeof(global::SimpleFlickrClient.ItemPage);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -195,13 +197,19 @@ namespace SimpleFlickrClient.SimpleFlickrClient_WindowsPhone_XamlTypeInfo
         private object Activate_5_HubPage() { return new global::SimpleFlickrClient.HubPage(); }
         private object Activate_10_ObservableDictionary() { return new global::SimpleFlickrClient.Common.ObservableDictionary(); }
         private object Activate_12_SectionPage() { return new global::SimpleFlickrClient.SectionPage(); }
-        private object Activate_13_ItemPage() { return new global::SimpleFlickrClient.ItemPage(); }
+        private object Activate_14_ItemPage() { return new global::SimpleFlickrClient.ItemPage(); }
         private void MapAdd_10_ObservableDictionary(object instance, object key, object item)
         {
             var collection = (global::System.Collections.Generic.IDictionary<global::System.String, global::System.Object>)instance;
             var newKey = (global::System.String)key;
             var newItem = (global::System.Object)item;
             collection.Add(newKey, newItem);
+        }
+        private void VectorAdd_13_IList(object instance, object item)
+        {
+            var collection = (global::System.Collections.Generic.ICollection<global::Windows.UI.Xaml.DependencyObject>)instance;
+            var newItem = (global::Windows.UI.Xaml.DependencyObject)item;
+            collection.Add(newItem);
         }
 
         private global::Windows.UI.Xaml.Markup.IXamlType CreateXamlType(int typeIndex)
@@ -293,9 +301,15 @@ namespace SimpleFlickrClient.SimpleFlickrClient_WindowsPhone_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 13:   //  SimpleFlickrClient.ItemPage
+            case 13:   //  System.Collections.Generic.IList`1<Windows.UI.Xaml.DependencyObject>
+                userType = new global::SimpleFlickrClient.SimpleFlickrClient_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, null);
+                userType.CollectionAdd = VectorAdd_13_IList;
+                xamlType = userType;
+                break;
+
+            case 14:   //  SimpleFlickrClient.ItemPage
                 userType = new global::SimpleFlickrClient.SimpleFlickrClient_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_13_ItemPage;
+                userType.Activator = Activate_14_ItemPage;
                 userType.AddMemberName("NavigationHelper");
                 userType.AddMemberName("DefaultViewModel");
                 userType.SetIsLocalType();

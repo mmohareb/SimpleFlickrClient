@@ -88,21 +88,6 @@ namespace SimpleFlickrClient
             // TODO: Save the unique state of the page here.
         }
 
-        /// <summary>
-        /// Shows the details of an item clicked on in the <see cref="ItemPage"/>
-        /// </summary>
-        /// <param name="sender">The GridView displaying the item clicked.</param>
-        /// <param name="e">Event data that describes the item clicked.</param>
-        private void ItemView_ItemClick(object sender, ItemClickEventArgs e)
-        {
-            var itemId = ((SampleDataItem)e.ClickedItem).UniqueId;
-            if (!Frame.Navigate(typeof(ItemPage), itemId))
-            {
-                var resourceLoader = ResourceLoader.GetForCurrentView("Resources");
-                throw new Exception(resourceLoader.GetString("NavigationFailedExceptionMessage"));
-            }
-        }
-
         #region NavigationHelper registration
 
         /// <summary>
@@ -132,9 +117,13 @@ namespace SimpleFlickrClient
         private void pivotmainview_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             var selecteditem = ((sender as Pivot).SelectedItem as ThumbnailImage);
-            if (selecteditem!=null && selecteditem.GeoLocation != null)
+            if (selecteditem != null && selecteditem.GeoLocation != null)
             {
                 (App.Current.Resources["Locator"] as ViewModel.ViewModelLocator).Main.LocationAppBarVisibility = Visibility.Visible;
+            }
+            else
+            {
+                (App.Current.Resources["Locator"] as ViewModel.ViewModelLocator).Main.LocationAppBarVisibility = Visibility.Collapsed;
             }
         }
 
@@ -143,7 +132,10 @@ namespace SimpleFlickrClient
             var selecteditem = (pivotmainview.SelectedItem as ThumbnailImage);
             if (selecteditem != null)
             {
-                (App.Current.Resources["Locator"] as ViewModelLocator).Main.Location = selecteditem.GeoLocation;
+                var vm = (App.Current.Resources["Locator"] as ViewModelLocator).Main;
+                vm.Location = selecteditem.GeoLocation;
+                vm.LocationTitle = selecteditem.ImageTitle;
+
                 Frame.Navigate(typeof(ItemPage));
             }
         }

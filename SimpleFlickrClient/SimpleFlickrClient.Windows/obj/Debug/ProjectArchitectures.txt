@@ -1,1 +1,1 @@
-c:\users\mmohareb1\documents\visual studio 2015\Projects\SimpleFlickrClient\SimpleFlickrClient\SimpleFlickrClient.Windows\SimpleFlickrClient.Windows.csproj;neutral
+C:\Users\mmohareb1\Source\Repos\SimpleFlickrClient\SimpleFlickrClient\SimpleFlickrClient\SimpleFlickrClient.Windows\SimpleFlickrClient.Windows.csproj;neutral

@@ -1,6 +1,6 @@
 C:\Program Files (x86)\Microsoft SDKs\WindowsPhoneApp\v8.1\ExtensionSDKs\BehaviorsXamlSDKManaged\12.0\Redist\CommonConfiguration\Neutral\Microsoft.Xaml.Interactions.pri
 C:\Program Files (x86)\Microsoft SDKs\WindowsPhoneApp\v8.1\ExtensionSDKs\BehaviorsXamlSDKManaged\12.0\Redist\CommonConfiguration\Neutral\Microsoft.Xaml.Interactivity.pri
-C:\Users\mmohareb1\Documents\Visual Studio 2015\Projects\SimpleFlickrClient\packages\MvvmLightLibs.5.2.0.0\lib\wpa81\GalaSoft.MvvmLight.Platform.pri
-C:\Users\mmohareb1\Documents\Visual Studio 2015\Projects\SimpleFlickrClient\packages\PCLCrypto.1.0.0.15071\lib\wpa81\PCLCrypto.pri
-C:\Users\mmohareb1\Documents\Visual Studio 2015\Projects\SimpleFlickrClient\SimpleFlickrClient\SimpleFlickrClient.WindowsPhone\obj\x86\Debug\Microsoft.Practices.ServiceLocation.pri
-C:\Users\mmohareb1\Documents\Visual Studio 2015\Projects\SimpleFlickrClient\SimpleFlickrClient\SimpleFlickrClient.WindowsPhone\obj\x86\Debug\Validation.pri
+C:\Users\mmohareb1\Source\Repos\SimpleFlickrClient\SimpleFlickrClient\packages\MvvmLightLibs.5.2.0.0\lib\wpa81\GalaSoft.MvvmLight.Platform.pri
+C:\Users\mmohareb1\Source\Repos\SimpleFlickrClient\SimpleFlickrClient\packages\PCLCrypto.1.0.0.15071\lib\wpa81\PCLCrypto.pri
+C:\Users\mmohareb1\Source\Repos\SimpleFlickrClient\SimpleFlickrClient\SimpleFlickrClient\SimpleFlickrClient.WindowsPhone\obj\x86\Debug\Microsoft.Practices.ServiceLocation.pri
+C:\Users\mmohareb1\Source\Repos\SimpleFlickrClient\SimpleFlickrClient\SimpleFlickrClient\SimpleFlickrClient.WindowsPhone\obj\x86\Debug\Validation.pri
