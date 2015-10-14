@@ -84,10 +84,11 @@ namespace SimpleFlickrClient
         /// </summary>
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
+            var bingLocation = e.Parameter as Bing.Maps.Location;
             var vm = (App.Current.Resources["Locator"] as ViewModel.ViewModelLocator).Main;
             Pushpin pushpin = new Pushpin();
-            MapLayer.SetPosition(pushpin, vm.BingMapsLocation);
-            mapControl.Center = vm.BingMapsLocation;
+            MapLayer.SetPosition(pushpin, bingLocation);
+            mapControl.Center = bingLocation;
             mapControl.Children.Add(pushpin);
             pageTitle.Text = vm.LocationTitle;
             this.navigationHelper.OnNavigatedTo(e);

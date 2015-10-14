@@ -127,10 +127,10 @@ namespace SimpleFlickrClient
             if (selecteditem != null)
             {
                 var vm = (App.Current.Resources["Locator"] as ViewModelLocator).Main;
-                vm.BingMapsLocation = new Bing.Maps.Location(selecteditem.GeoLocation.Position.Latitude, selecteditem.GeoLocation.Position.Longitude);
+                var bingLocation = new Bing.Maps.Location(selecteditem.GeoLocation.Position.Latitude, selecteditem.GeoLocation.Position.Longitude);
                 vm.LocationTitle = selecteditem.ImageTitle;
 
-                Frame.Navigate(typeof(ItemPage));
+                Frame.Navigate(typeof(ItemPage), bingLocation);
             }
         }
     }

@@ -94,3 +94,24 @@ C:\Users\mmohareb1\Documents\Visual Studio 2015\Projects\SimpleFlickrClient\Simp
 C:\Users\mmohareb1\Documents\Visual Studio 2015\Projects\SimpleFlickrClient\SimpleFlickrClient\SimpleFlickrClient.WindowsPhone\obj\ARM\Debug\Validation\pri.resfiles.intermediate
 C:\Users\mmohareb1\Documents\Visual Studio 2015\Projects\SimpleFlickrClient\SimpleFlickrClient\SimpleFlickrClient.WindowsPhone\obj\ARM\Debug\Validation\priconfig.xml
 C:\Users\mmohareb1\Documents\Visual Studio 2015\Projects\SimpleFlickrClient\SimpleFlickrClient\SimpleFlickrClient.WindowsPhone\obj\ARM\Debug\Validation\priconfig.xml.intermediate
+C:\Users\mmohareb1\Source\Repos\SimpleFlickrClient\SimpleFlickrClient\SimpleFlickrClient\SimpleFlickrClient.WindowsPhone\obj\ARM\Debug\SimpleFlickrClient.WindowsPhone.csprojResolveAssemblyReference.cache
+C:\Users\mmohareb1\Source\Repos\SimpleFlickrClient\SimpleFlickrClient\SimpleFlickrClient\SimpleFlickrClient.WindowsPhone\obj\ARM\Debug\App.g.i.cs
+C:\Users\mmohareb1\Source\Repos\SimpleFlickrClient\SimpleFlickrClient\SimpleFlickrClient\SimpleFlickrClient.WindowsPhone\obj\ARM\Debug\App.g.cs
+C:\Users\mmohareb1\Source\Repos\SimpleFlickrClient\SimpleFlickrClient\SimpleFlickrClient\SimpleFlickrClient.WindowsPhone\obj\ARM\Debug\HubPage.g.i.cs
+C:\Users\mmohareb1\Source\Repos\SimpleFlickrClient\SimpleFlickrClient\SimpleFlickrClient\SimpleFlickrClient.WindowsPhone\obj\ARM\Debug\HubPage.g.cs
+C:\Users\mmohareb1\Source\Repos\SimpleFlickrClient\SimpleFlickrClient\SimpleFlickrClient\SimpleFlickrClient.WindowsPhone\obj\ARM\Debug\SectionPage.g.i.cs
+C:\Users\mmohareb1\Source\Repos\SimpleFlickrClient\SimpleFlickrClient\SimpleFlickrClient\SimpleFlickrClient.WindowsPhone\obj\ARM\Debug\SectionPage.g.cs
+C:\Users\mmohareb1\Source\Repos\SimpleFlickrClient\SimpleFlickrClient\SimpleFlickrClient\SimpleFlickrClient.WindowsPhone\obj\ARM\Debug\ItemPage.g.i.cs
+C:\Users\mmohareb1\Source\Repos\SimpleFlickrClient\SimpleFlickrClient\SimpleFlickrClient\SimpleFlickrClient.WindowsPhone\obj\ARM\Debug\ItemPage.g.cs
+C:\Users\mmohareb1\Source\Repos\SimpleFlickrClient\SimpleFlickrClient\SimpleFlickrClient\SimpleFlickrClient.WindowsPhone\obj\ARM\Debug\XamlTypeInfo.g.cs
+C:\Users\mmohareb1\Source\Repos\SimpleFlickrClient\SimpleFlickrClient\SimpleFlickrClient\SimpleFlickrClient.WindowsPhone\obj\ARM\Debug\App.xaml
+C:\Users\mmohareb1\Source\Repos\SimpleFlickrClient\SimpleFlickrClient\SimpleFlickrClient\SimpleFlickrClient.WindowsPhone\obj\ARM\Debug\HubPage.xaml
+C:\Users\mmohareb1\Source\Repos\SimpleFlickrClient\SimpleFlickrClient\SimpleFlickrClient\SimpleFlickrClient.WindowsPhone\obj\ARM\Debug\SectionPage.xaml
+C:\Users\mmohareb1\Source\Repos\SimpleFlickrClient\SimpleFlickrClient\SimpleFlickrClient\SimpleFlickrClient.WindowsPhone\obj\ARM\Debug\ItemPage.xaml
+C:\Users\mmohareb1\Source\Repos\SimpleFlickrClient\SimpleFlickrClient\SimpleFlickrClient\SimpleFlickrClient.WindowsPhone\obj\ARM\Debug\App.xbf
+C:\Users\mmohareb1\Source\Repos\SimpleFlickrClient\SimpleFlickrClient\SimpleFlickrClient\SimpleFlickrClient.WindowsPhone\obj\ARM\Debug\HubPage.xbf
+C:\Users\mmohareb1\Source\Repos\SimpleFlickrClient\SimpleFlickrClient\SimpleFlickrClient\SimpleFlickrClient.WindowsPhone\obj\ARM\Debug\SectionPage.xbf
+C:\Users\mmohareb1\Source\Repos\SimpleFlickrClient\SimpleFlickrClient\SimpleFlickrClient\SimpleFlickrClient.WindowsPhone\obj\ARM\Debug\ItemPage.xbf
+C:\Users\mmohareb1\Source\Repos\SimpleFlickrClient\SimpleFlickrClient\SimpleFlickrClient\SimpleFlickrClient.WindowsPhone\obj\ARM\Debug\XamlSaveStateFile.xml
+C:\Users\mmohareb1\Source\Repos\SimpleFlickrClient\SimpleFlickrClient\SimpleFlickrClient\SimpleFlickrClient.WindowsPhone\obj\ARM\Debug\SimpleFlickrClient.WindowsPhone.exe
+C:\Users\mmohareb1\Source\Repos\SimpleFlickrClient\SimpleFlickrClient\SimpleFlickrClient\SimpleFlickrClient.WindowsPhone\obj\ARM\Debug\SimpleFlickrClient.WindowsPhone.pdb
